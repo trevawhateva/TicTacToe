@@ -1,0 +1,115 @@
+body 
+  background-color: #005271
+  padding-top: 100px
+  padding-bottom: 100px
+  
+#main
+  background-color: #005271
+  height: 615px
+  padding-top: 25px
+  
+.head
+  background-color: #E77800
+  color: white
+  
+.title
+  color: white
+  text-align: center
+  
+.bod
+  background-color: #E77800
+  color: white
+  text-align: center
+  align: center
+  font-size: 72px
+  
+#X
+  display: inline-block
+  margin: 80px
+  cursor: pointer
+  
+#O
+  display: inline-block
+  margin: 80px
+  cursor: pointer
+  
+#or
+  display: inline-block
+  
+.box
+  text-align: center
+  color: #008CC2
+  background-color: #008CC2
+  padding: 20px 20px 20px 20px
+  margin-right: 10px
+  margin-bottom: 10px
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, .14), 0 1px 10px 0 rgba(0, 0, 0, .12), 0 2px 4px -1px rgba(0, 0, 0, .2)
+
+.box:hover
+  box-shadow: 1px 1px #E7A400, 2px 2px #E7A400, 3px 3px #E7A400
+  -webkit-transform: translateX(-3px)
+  transform: translateX(-3px)
+  
+.againbox
+  text-align: center
+  color: white
+  background-color: #008CC2
+  padding: 20px 20px 20px 20px
+  margin-right: 10px
+  margin-bottom: 10px
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, .14), 0 1px 10px 0 rgba(0, 0, 0, .12), 0 2px 4px -1px rgba(0, 0, 0, .2)
+
+.againbox:hover
+  box-shadow: 1px 1px #E7A400, 2px 2px #E7A400, 3px 3px #E7A400
+  -webkit-transform: translateX(-3px)
+  transform: translateX(-3px)
+  
+.win-banner
+  text-align: center
+  color: white
+  
+.hide
+  display: hidden
+
+.clicked-box
+  text-align: center
+  color: white
+  background-color: #B41F00
+  padding: 20px 20px 20px 20px
+  margin-right: 10px
+  margin-bottom: 10px
+  
+.winning-box
+  text-align: center
+  color: white
+  background-color: #00A33D
+  box-shadow: 1px 1px #002634, 2px 2px #002634, 3px 3px #002634
+  -webkit-transform: translateX(-3px)
+  transform: translateX(-3px)
+  
+.spin 
+  text-align: center
+  animation-name: spin, depth
+  animation-timing-function: linear
+  animation-iteration-count: infinite
+  animation-duration: 3s
+
+@keyframes spin 
+  from 
+    transform: rotateY(0deg)
+  to 
+    transform: rotateY(-360deg)
+
+@keyframes depth 
+  0%  
+    text-shadow: 0 0 white 
+  25%  
+    text-shadow: 1px 0 white, 2px 0 white, 3px 0 white, 4px 0 white, 5px 0 white
+  50%  
+    text-shadow: 0 0 white
+  75%  
+    text-shadow: -1px 0 white, -2px 0 white, -3px 0 white, -4px 0 white, -5px 0 white
+  100%  
+    text-shadow: 0 0 white
+
+  
